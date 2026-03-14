@@ -1,0 +1,99 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.12.01 (64-bit)"
+//Sat Mar 14 18:08:02 2026
+
+//Source file index table:
+//file0 "\C:/Users/beyza/Desktop/Embedded\ System/foy2/deney1_mux/src/lojik_kapilar.v"
+`timescale 100 ps/100 ps
+module lojik_kapilar (
+  btn1,
+  btn2,
+  led
+)
+;
+input btn1;
+input btn2;
+output [5:0] led;
+wire btn1_d;
+wire btn2_d;
+wire led_d_3_4;
+wire [5:0] led_d;
+wire VCC;
+wire GND;
+  IBUF btn1_ibuf (
+    .O(btn1_d),
+    .I(btn1) 
+);
+  IBUF btn2_ibuf (
+    .O(btn2_d),
+    .I(btn2) 
+);
+  OBUF led_0_obuf (
+    .O(led[0]),
+    .I(led_d[0]) 
+);
+  OBUF led_1_obuf (
+    .O(led[1]),
+    .I(led_d[1]) 
+);
+  OBUF led_2_obuf (
+    .O(led[2]),
+    .I(led_d[2]) 
+);
+  OBUF led_3_obuf (
+    .O(led[3]),
+    .I(led_d_3_4) 
+);
+  OBUF led_4_obuf (
+    .O(led[4]),
+    .I(led_d[4]) 
+);
+  OBUF led_5_obuf (
+    .O(led[5]),
+    .I(led_d[5]) 
+);
+  LUT2 led_d_4_s (
+    .F(led_d[4]),
+    .I0(btn1_d),
+    .I1(btn2_d) 
+);
+defparam led_d_4_s.INIT=4'h1;
+  LUT2 led_d_1_s (
+    .F(led_d[1]),
+    .I0(btn1_d),
+    .I1(btn2_d) 
+);
+defparam led_d_1_s.INIT=4'h8;
+  LUT2 led_d_2_s (
+    .F(led_d[2]),
+    .I0(btn1_d),
+    .I1(btn2_d) 
+);
+defparam led_d_2_s.INIT=4'h9;
+  LUT2 led_d_5_s0 (
+    .F(led_d[5]),
+    .I0(btn1_d),
+    .I1(btn2_d) 
+);
+defparam led_d_5_s0.INIT=4'h7;
+  LUT2 led_d_0_s0 (
+    .F(led_d[0]),
+    .I0(btn1_d),
+    .I1(btn2_d) 
+);
+defparam led_d_0_s0.INIT=4'hE;
+  INV led_d_3_s0 (
+    .O(led_d_3_4),
+    .I(btn1_d) 
+);
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* lojik_kapilar */
