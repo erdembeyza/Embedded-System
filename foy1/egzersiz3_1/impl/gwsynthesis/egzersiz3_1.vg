@@ -1,0 +1,62 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.12.01 (64-bit)"
+//Sat Mar 14 02:41:53 2026
+
+//Source file index table:
+//file0 "\C:/Users/beyza/Desktop/gomulu/foy1/egzersiz3_1/src/egzersiz3_1.v"
+`timescale 100 ps/100 ps
+module binary_goster (
+  btn1,
+  btn2,
+  led
+)
+;
+input btn1;
+input btn2;
+output [5:0] led;
+wire [1:0] led_d;
+wire VCC;
+wire GND;
+  IBUF btn1_ibuf (
+    .O(led_d[0]),
+    .I(btn1) 
+);
+  IBUF btn2_ibuf (
+    .O(led_d[1]),
+    .I(btn2) 
+);
+  OBUF led_0_obuf (
+    .O(led[0]),
+    .I(led_d[0]) 
+);
+  OBUF led_1_obuf (
+    .O(led[1]),
+    .I(led_d[1]) 
+);
+  OBUF led_2_obuf (
+    .O(led[2]),
+    .I(VCC) 
+);
+  OBUF led_3_obuf (
+    .O(led[3]),
+    .I(VCC) 
+);
+  OBUF led_4_obuf (
+    .O(led[4]),
+    .I(VCC) 
+);
+  OBUF led_5_obuf (
+    .O(led[5]),
+    .I(VCC) 
+);
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* binary_goster */

@@ -1,0 +1,49 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.12.01 (64-bit)"
+//Sat Mar 14 02:03:13 2026
+
+//Source file index table:
+//file0 "\C:/Users/beyza/Desktop/gomulu/foy1/deney1_led/src/led_yak.v"
+`timescale 100 ps/100 ps
+module led_yak (
+  led
+)
+;
+output [5:0] led;
+wire VCC;
+wire GND;
+  OBUF led_0_obuf (
+    .O(led[0]),
+    .I(GND) 
+);
+  OBUF led_1_obuf (
+    .O(led[1]),
+    .I(GND) 
+);
+  OBUF led_2_obuf (
+    .O(led[2]),
+    .I(GND) 
+);
+  OBUF led_3_obuf (
+    .O(led[3]),
+    .I(GND) 
+);
+  OBUF led_4_obuf (
+    .O(led[4]),
+    .I(GND) 
+);
+  OBUF led_5_obuf (
+    .O(led[5]),
+    .I(GND) 
+);
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* led_yak */

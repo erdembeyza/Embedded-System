@@ -1,0 +1,20 @@
+[
+ {
+  "InstFile" : "C:/Users/beyza/Desktop/gomulu/fpga_project/src/tb_majority4.v",
+  "InstLine" : 3,
+  "InstName" : "tb_majority4",
+  "ModuleFile" : "C:/Users/beyza/Desktop/gomulu/fpga_project/src/tb_majority4.v",
+  "ModuleLine" : 3,
+  "ModuleName" : "tb_majority4",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/beyza/Desktop/gomulu/fpga_project/src/tb_majority4.v",
+    "InstLine" : 8,
+    "InstName" : "uut",
+    "ModuleFile" : "C:/Users/beyza/Desktop/gomulu/fpga_project/src/majority4.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "majority4"
+   }
+  ]
+ }
+]

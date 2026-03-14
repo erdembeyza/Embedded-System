@@ -1,0 +1,7 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\Users\beyza\Desktop\gomulu\foy1\deney2_led\src\buton_led.v'
+ERROR (EX3863) : Syntax error near 'assign'("C:\Users\beyza\Desktop\gomulu\foy1\deney2_led\src\buton_led.v":15)
+ERROR (EX2656) : Verilog 2001 keyword 'assign' used in incorrect context("C:\Users\beyza\Desktop\gomulu\foy1\deney2_led\src\buton_led.v":15)
+Verilog file 'C:\Users\beyza\Desktop\gomulu\foy1\deney2_led\src\buton_led.v' ignored due to errors
+GowinSynthesis finish

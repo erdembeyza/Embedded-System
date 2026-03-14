@@ -1,0 +1,29 @@
+Reading netlist file: "C:\Users\beyza\Desktop\gomulu\foy1\led_desen\impl\gwsynthesis\led_desen.vg"
+Parsing netlist file "C:\Users\beyza\Desktop\gomulu\foy1\led_desen\impl\gwsynthesis\led_desen.vg" completed
+Processing netlist completed
+Reading constraint file: "C:\Users\beyza\Desktop\gomulu\foy1\led_desen\src\led_desen.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "C:\Users\beyza\Desktop\gomulu\foy1\led_desen\impl\pnr\led_desen.power.html" completed
+Generate file "C:\Users\beyza\Desktop\gomulu\foy1\led_desen\impl\pnr\led_desen.pin.html" completed
+Generate file "C:\Users\beyza\Desktop\gomulu\foy1\led_desen\impl\pnr\led_desen.rpt.html" completed
+Generate file "C:\Users\beyza\Desktop\gomulu\foy1\led_desen\impl\pnr\led_desen.rpt.txt" completed
+Generate file "C:\Users\beyza\Desktop\gomulu\foy1\led_desen\impl\pnr\led_desen.tr.html" completed
+Sat Mar 14 02:38:12 2026
+

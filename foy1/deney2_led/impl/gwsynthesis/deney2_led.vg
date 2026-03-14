@@ -1,0 +1,74 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.12.01 (64-bit)"
+//Sat Mar 14 02:13:46 2026
+
+//Source file index table:
+//file0 "\C:/Users/beyza/Desktop/gomulu/foy1/deney2_led/src/buton_led.v"
+`timescale 100 ps/100 ps
+module buton_led (
+  btn1,
+  btn2,
+  led
+)
+;
+input btn1;
+input btn2;
+output [5:0] led;
+wire [3:0] led_d;
+wire VCC;
+wire GND;
+  IBUF btn1_ibuf (
+    .O(led_d[0]),
+    .I(btn1) 
+);
+  IBUF btn2_ibuf (
+    .O(led_d[1]),
+    .I(btn2) 
+);
+  OBUF led_0_obuf (
+    .O(led[0]),
+    .I(led_d[0]) 
+);
+  OBUF led_1_obuf (
+    .O(led[1]),
+    .I(led_d[1]) 
+);
+  OBUF led_2_obuf (
+    .O(led[2]),
+    .I(led_d[2]) 
+);
+  OBUF led_3_obuf (
+    .O(led[3]),
+    .I(led_d[3]) 
+);
+  OBUF led_4_obuf (
+    .O(led[4]),
+    .I(VCC) 
+);
+  OBUF led_5_obuf (
+    .O(led[5]),
+    .I(VCC) 
+);
+  LUT2 led_d_2_s (
+    .F(led_d[2]),
+    .I0(led_d[0]),
+    .I1(led_d[1]) 
+);
+defparam led_d_2_s.INIT=4'hE;
+  LUT2 led_d_3_s (
+    .F(led_d[3]),
+    .I0(led_d[0]),
+    .I1(led_d[1]) 
+);
+defparam led_d_3_s.INIT=4'h8;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* buton_led */

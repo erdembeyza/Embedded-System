@@ -1,0 +1,16 @@
+-d C:\Users\beyza\Desktop\gomulu\foy1\deney1_led\impl\gwsynthesis\deney1_led.vg
+-p GW1NR-9C-QFN88P-6
+-pn GW1NR-LV9QN88PC6/I5
+-cst C:\Users\beyza\Desktop\gomulu\foy1\deney1_led\src\deney1_led.cst
+-cfg C:\Users\beyza\Desktop\gomulu\foy1\deney1_led\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-place_option 0
+-route_option 0
+-clock_route_order 0
+-correct_hold 1
+-route_maxfan 23
+-global_freq 50.000
