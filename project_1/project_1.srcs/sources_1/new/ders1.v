@@ -1,9 +1,0 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-module ders1(
-    input a,
-    input b,
-    output y
-    );
-    assign y=a&b;
-endmodule 

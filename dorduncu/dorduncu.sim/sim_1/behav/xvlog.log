@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/beyza/Desktop/Embedded System/dorduncu/dorduncu.srcs/sources_1/new/toplayici.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module toplayici
+INFO: [VRFC 10-2458] undeclared symbol Sum, assumed default net type wire [C:/Users/beyza/Desktop/Embedded System/dorduncu/dorduncu.srcs/sources_1/new/toplayici.v:10]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/beyza/Desktop/Embedded System/dorduncu/dorduncu.srcs/sim_1/new/Sim_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim_adder
+INFO: [VRFC 10-2458] undeclared symbol sum, assumed default net type wire [C:/Users/beyza/Desktop/Embedded System/dorduncu/dorduncu.srcs/sim_1/new/Sim_adder.v:11]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/beyza/Desktop/Embedded System/dorduncu/dorduncu.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
