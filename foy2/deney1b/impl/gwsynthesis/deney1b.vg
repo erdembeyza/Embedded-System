@@ -1,0 +1,70 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.12.01 (64-bit)"
+//Wed Mar 18 18:56:36 2026
+
+//Source file index table:
+//file0 "\C:/Users/beyza/Desktop/Embedded\ System/foy2/deney1b/src/mux_2to1.v"
+`timescale 100 ps/100 ps
+module mux_2to1 (
+  btn1,
+  btn2,
+  led
+)
+;
+input btn1;
+input btn2;
+output [5:0] led;
+wire btn1_d;
+wire btn2_d;
+wire [0:0] led_d;
+wire VCC;
+wire GND;
+  IBUF btn1_ibuf (
+    .O(btn1_d),
+    .I(btn1) 
+);
+  IBUF btn2_ibuf (
+    .O(btn2_d),
+    .I(btn2) 
+);
+  OBUF led_0_obuf (
+    .O(led[0]),
+    .I(led_d[0]) 
+);
+  OBUF led_1_obuf (
+    .O(led[1]),
+    .I(btn1_d) 
+);
+  OBUF led_2_obuf (
+    .O(led[2]),
+    .I(VCC) 
+);
+  OBUF led_3_obuf (
+    .O(led[3]),
+    .I(VCC) 
+);
+  OBUF led_4_obuf (
+    .O(led[4]),
+    .I(VCC) 
+);
+  OBUF led_5_obuf (
+    .O(led[5]),
+    .I(VCC) 
+);
+  LUT2 led_d_0_s (
+    .F(led_d[0]),
+    .I0(btn1_d),
+    .I1(btn2_d) 
+);
+defparam led_d_0_s.INIT=4'h4;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* mux_2to1 */
