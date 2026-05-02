@@ -1,0 +1,31 @@
+Reading netlist file: "C:\Users\beyza\Desktop\Embedded System\foy3\deney1_clock_divider\impl\gwsynthesis\deney1_clock_divider.vg"
+Parsing netlist file "C:\Users\beyza\Desktop\Embedded System\foy3\deney1_clock_divider\impl\gwsynthesis\deney1_clock_divider.vg" completed
+Processing netlist completed
+Reading constraint file: "C:\Users\beyza\Desktop\Embedded System\foy3\deney1_clock_divider\src\deney1_clock_divider.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+WARN  (TA1132) :  'clk' was determined to be a clock but was not created.
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'clk_d' by the specified constraint. And then it may lead to the excessive delay or skew
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "C:\Users\beyza\Desktop\Embedded System\foy3\deney1_clock_divider\impl\pnr\deney1_clock_divider.power.html" completed
+Generate file "C:\Users\beyza\Desktop\Embedded System\foy3\deney1_clock_divider\impl\pnr\deney1_clock_divider.pin.html" completed
+Generate file "C:\Users\beyza\Desktop\Embedded System\foy3\deney1_clock_divider\impl\pnr\deney1_clock_divider.rpt.html" completed
+Generate file "C:\Users\beyza\Desktop\Embedded System\foy3\deney1_clock_divider\impl\pnr\deney1_clock_divider.rpt.txt" completed
+Generate file "C:\Users\beyza\Desktop\Embedded System\foy3\deney1_clock_divider\impl\pnr\deney1_clock_divider.tr.html" completed
+Sat May  2 14:30:50 2026
+
